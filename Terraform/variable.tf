@@ -2,6 +2,10 @@ variable "project_name" {
   type = string
 }
 
+variable "aws_secret_name" {
+  type = string
+}
+
 variable "api_token" {
   type = string
 }

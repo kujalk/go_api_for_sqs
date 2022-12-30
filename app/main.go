@@ -35,7 +35,7 @@ func init() {
 	// Fetch the token from AWS Secret Manager
 	smClient := secretsmanager.New(sess)
 	input := &secretsmanager.GetSecretValueInput{
-		SecretId: aws.String("api_token_dev"),
+		SecretId: aws.String("api_token_test"),
 	}
 	result, err := smClient.GetSecretValue(input)
 	if err != nil {

@@ -1,11 +1,11 @@
 resource "aws_ssm_parameter" "sqs-queue" {
-  name  = "${var.project_name}_sqs_name"
+  name  = "${var.project_name}_sqs_url"
   type  = "String"
   value = aws_sqs_queue.app_queue.url
 }
 
 resource "aws_secretsmanager_secret" "api-token" {
-  name = "api_token_dev"
+  name = var.aws_secret_name
 }
 
 resource "aws_secretsmanager_secret_version" "api-token" {

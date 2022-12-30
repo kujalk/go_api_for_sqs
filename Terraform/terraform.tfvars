@@ -4,3 +4,4 @@ image_url         = "955017809248.dkr.ecr.ap-southeast-1.amazonaws.com/go-sqs-ap
 public_subnet1_id = "subnet-079dd3d868347eb48"
 public_subnet2_id = "subnet-06ba9d79623e0addf"
 vpc_id            = "vpc-011548ea38a869455"
+aws_secret_name   = "api_token_test"
