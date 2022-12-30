@@ -1,4 +1,4 @@
-project_name      = "go-api"
+project_name      = "go-sqs-api"
 api_token         = "{\"token\":\"golangapi123\"}"
 image_url         = "955017809248.dkr.ecr.ap-southeast-1.amazonaws.com/golang:latest"
 public_subnet1_id = "subnet-079dd3d868347eb48"
