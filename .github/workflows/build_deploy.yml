@@ -48,11 +48,11 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       
     - name: Terraform Init
-      run: terraform init
+      run: cd Terraform;terraform init
 
     - name: Terraform Plan
-      run: terraform plan -input=false
+      run: cd Terraform;terraform plan -input=false
 
     # Applying changes to Infrastructure (for each environment)
     - name: Terraform Apply/Destroy
-      run: terraform ${{ github.event.inputs.action }} -auto-approve -input=false
+      run: cd Terraform;terraform ${{ github.event.inputs.action }} -auto-approve -input=false
