@@ -3,7 +3,6 @@ resource "aws_security_group" "ecs-service" {
   description = "To allow Traffic to ECS Service"
   vpc_id      = var.vpc_id
 
-
   tags = {
     Name = "${var.project_name}_ECS_Service"
   }
