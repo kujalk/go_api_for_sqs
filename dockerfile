@@ -1,6 +1,5 @@
 FROM golang:latest
 
-
 # Set the working directory
 WORKDIR /app
 
