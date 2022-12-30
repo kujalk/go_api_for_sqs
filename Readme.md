@@ -1,4 +1,7 @@
 
+## Running in AWS Fargate (Build using GitAction)
+
+
 ## Running Locally 
 * Create a environment variable file 
 ``` bash
