@@ -5,7 +5,7 @@ resource "aws_ssm_parameter" "sqs-queue" {
 }
 
 resource "aws_secretsmanager_secret" "api-token" {
-  name = "api_token"
+  name = "api_token_dev"
 }
 
 resource "aws_secretsmanager_secret_version" "api-token" {
