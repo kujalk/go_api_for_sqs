@@ -37,9 +37,9 @@ jobs:
       if: github.event.inputs.action == 'apply'
       run: |
         docker build -t go-sqs-api .
-        aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 955017809248.dkr.ecr.ap-southeast-1.amazonaws.com
-        docker tag go-sqs-api:latest 955017809248.dkr.ecr.ap-southeast-1.amazonaws.com/go-sqs-api
-        docker push 955017809248.dkr.ecr.ap-southeast-1.amazonaws.com/go-sqs-api:latest
+        aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 1234.dkr.ecr.ap-southeast-1.amazonaws.com
+        docker tag go-sqs-api:latest 1234.dkr.ecr.ap-southeast-1.amazonaws.com/go-sqs-api
+        docker push 1234.dkr.ecr.ap-southeast-1.amazonaws.com/go-sqs-api:latest
       
     # Install the latest version of Terraform CLI
     - name: Setup Terraform
