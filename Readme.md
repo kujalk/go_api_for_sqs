@@ -2,6 +2,7 @@
 This app is developed in golang with 2 API endpoints. For sending(post) and receiving(get) messages from AWS SQS. API endpoint is protected using a Bearer token
 
 ## Architecture
+![alt text](https://github.com/kujalk/HTML_S3_Uploader/blob/main/blog-diagram/error_without_cred.png)
 
 ## Features
 * API Token is stored in AWS Secret
