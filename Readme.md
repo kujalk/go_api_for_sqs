@@ -7,6 +7,7 @@ This app is developed in golang with 2 API endpoints. For sending(post) and rece
 * API Token is stored in AWS Secret
 * AWS SQS url is passed as env variable from AWS SSM parameter store
 * API app is hosted in AWS Fargate
+* Terraform based deployment via Github Action
 
 ## Running in AWS Fargate (Build using GitAction)
 1. Create a S3 bucket for Terraform backend (provider.tf)
@@ -35,6 +36,9 @@ terraform {
 ``` bash
 docker run -d --name my-go-app-container -p 9020:8080 --env-file env.list my-go-app
 ```
+
+## Blog 
+https://scripting4ever.wordpress.com/2022/12/31/go-api-to-send-and-receive-message-from-aws-sqs/
 
 ## Developer
 K.Janarthanan
