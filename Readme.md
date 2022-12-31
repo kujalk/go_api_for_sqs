@@ -34,6 +34,7 @@ terraform {
 * Create a environment variable file as env.list
 * Run the below command
 ``` bash
+docker build -t my-go-app .
 docker run -d --name my-go-app-container -p 9020:8080 --env-file env.list my-go-app
 ```
 
